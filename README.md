@@ -272,14 +272,6 @@ terraform validate
 terraform plan
 ```
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 ## 🚀 Quick Start
 
 1. **Deploy the infrastructure**:
