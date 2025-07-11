@@ -32,8 +32,6 @@ The infrastructure automatically fetches and serves an `index.html` file from yo
 - [Operational Metrics](#operational-metrics)  
 - [Troubleshooting](#troubleshooting)
 - [External Contributors](#external-contributors)  
-- [License](#license)
-
 ---
 
 ## 🖼 Architecture Diagram
