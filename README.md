@@ -3,6 +3,10 @@
 ## Overview
 This project provides Terraform code to deploy a scalable Quran application (or any containerized app, such as a sound app) on AWS. The app runs in Docker containers on EC2 instances, is automatically updated from your public GitHub repository every minute, and is accessible publicly via an Application Load Balancer (ALB).
 
+## 🖼 Architecture Diagram
+
+![Architecture Diagram](Animation.gif)
+
 ## 📚 Table of Contents
 - [Overview](#overview)
 - [Architecture](#architecture)
