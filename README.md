@@ -12,7 +12,6 @@ This project provides Terraform code to deploy a scalable Quran application (or 
 - [Monitoring & Alerts](#monitoring--alerts)
 - [Quick Start](#quick-start)
 - [How Auto-Update Works](#how-auto-update-works)
-- [More Information](#more-information)
 
 ## 🖼 Architecture
 ```
