@@ -9,7 +9,6 @@ This solution automatically provisions networking, compute, load balancing, moni
 - **Auto Scaling**: Dynamic scaling based on CPU utilization (target: 50%)
 - **Monitoring**: CloudWatch alarms and SNS notifications for performance monitoring
 - **Security**: Security Groups with least-privilege access control
-- **Automation**: UserData scripts automatically install Nginx and fetch content from GitHub
 - **Free Tier Optimized**: Uses t2.micro instances and Ubuntu 20.04 LTS
 
 The infrastructure automatically fetches and serves an `index.html` file from your GitHub repository every minute, ensuring content is always up-to-date. This solution can serve as a production-ready base infrastructure for hosting modern web applications with high availability and scalability.
