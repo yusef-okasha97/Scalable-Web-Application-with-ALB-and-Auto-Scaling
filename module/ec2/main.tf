@@ -53,8 +53,16 @@ locals {
     UPDATE_SCRIPT
     chmod +x /usr/local/bin/update_app.sh
     
-    # Add to cron every 1 minute to check for updates
-    (crontab -l 2>/dev/null; echo "* * * * * /usr/local/bin/update_app.sh") | crontab -
+    # Copy script to ubuntu's home and set permissions
+    cp /usr/local/bin/update_app.sh /home/ubuntu/update_app.sh
+    chown ubuntu:ubuntu /home/ubuntu/update_app.sh
+    chmod +x /home/ubuntu/update_app.sh
+
+    # Add cron job for ubuntu user (idempotent)
+    crontab -u ubuntu -l 2>/dev/null | grep -v 'update_app.sh' > /tmp/ubuntu_cron
+    echo "* * * * * /home/ubuntu/update_app.sh # Auto-update app" >> /tmp/ubuntu_cron
+    crontab -u ubuntu /tmp/ubuntu_cron
+    rm /tmp/ubuntu_cron
   EOF
 }
 
